@@ -3,8 +3,6 @@
 #include <string>
 using namespace std;
 
-/* Note that this hash function works best with short strings.*/
-
 long int myhash(string myparstring) {
     long unsigned int rtnVal = 3253;
     long unsigned int mysize = myparstring.length();
@@ -19,10 +17,10 @@ long int myhash(string myparstring) {
 
 int main() {
     string mystring;
-    cout << "\nPlease enter a SHORT string without quotes: ";
+    cout << "Please enter a string without quotes: ";
     cin >> mystring;
-    cout << "Here is your hash:" << endl;
+    cout << "Here is your hash: " << endl;
     cout << myhash(mystring) << endl;
-    cout << "\nRun a few times, but be sure to look at the code!" << endl;
+    cout << "\nRun a few times, being sure to look at the code!\n" << endl;
     return 0;
 }
